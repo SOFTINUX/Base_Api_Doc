@@ -1,0 +1,53 @@
+﻿{
+  "metadata": [
+    {
+      "src": [
+        {
+          "cwd":  "../Base",
+          "files": [
+            "/WebApplication/**.csproj",
+            "/Barebone/**.csproj",
+            "/Infrastructure/**.csproj",
+            "/Security/**.csproj",
+            "/Security.Data.Abstractions/**.csproj",
+            "/Security.Data.Entities/**.csproj",
+            "/Security.Data.EntityFramework/**.csproj",
+            "/Security.Data.EntityFramework.Sqlite/**.csproj"
+          ],
+          "exclude": [ "**/bin/**", "**/obj/**" ]
+        }
+      ],
+      "dest": "obj/api"
+    }
+  ],
+  "build": {
+    "template": [
+      "default",
+      "_simple_template"
+    ],
+    "content": [
+      {
+        "files": [ "**/*.yml" ],
+        "src": "obj/api",
+        "dest": "api"
+      },
+      {
+        "files": [ "articles/**/*.md", "*.md", "toc.yml", "restapi/**" ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [ "articles/images/**"]
+      }
+    ],
+    "overwrite": "specs/*.md",
+    "globalMetadata": {
+      "_appTitle": "SOFTINUX Base Api Documentation",
+      "_enableSearch": true,
+      "_appLogoPath": "articles/images/softinux_logo.png",
+      "_disableContribution": true,
+      "_appFooter": "<span>Copyright © 2018 <strong>Softinux</strong></span>"
+    },
+    "dest": "_site"
+  }
+}
