@@ -23,7 +23,7 @@
   "build": {
     "template": [
       "default",
-      "_simple_template"
+      "templates/_simple_template"
     ],
     "content": [
       {
