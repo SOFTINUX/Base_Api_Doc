@@ -17,6 +17,7 @@ artifacts/
 target/
 /**/_site/
 /**/_site_pdf/
+/**/_exported_templates/
 .vscode/
 .vs/
 
