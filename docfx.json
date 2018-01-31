@@ -51,6 +51,10 @@
     "dest": "_site"
   },
   "pdf": {
+    "template": [
+      "pdf.default",
+      "templates/_simple_template_pdf"
+    ],
     "content": [
       {
         "files": [
