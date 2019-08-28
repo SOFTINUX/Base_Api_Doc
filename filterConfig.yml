@@ -1,0 +1,10 @@
+apiRules:
+- exclude:
+    uidRegex: ^SoftinuxBase\.SeedDatabase\..*$
+    type: Namespace
+- exclude:
+    uidRegex: ^CommonTest\..*$
+    type: Namespace
+- exclude:
+    uidRegex: ^SecurityTest\..*$
+    type: Namespace
