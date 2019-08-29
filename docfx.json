@@ -13,7 +13,8 @@
             "_site/**",
             "**/Testing/**",
             "**/WebApplication/**",
-            "**/SoftinuxBase.SeedDatabase/**"
+            "**/SoftinuxBase.SeedDatabase/**",
+            "**/SoftinuxBase.Security.Data.EntityFramework.*/**"
           ]
         }],
       "dest": "api",
@@ -71,6 +72,7 @@
     "fileMetadataFiles": [],
     "template": [
       "default",
+      "statictoc",
       "templates/material",
       "templates/_simple_template",
       "template/description-generator"
